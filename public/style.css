@@ -1,0 +1,60 @@
+body{
+    background-color: pink;
+
+}
+.items{
+    background-color: rgb(255, 218, 218);
+    width: 75vw;
+    margin: 0 auto;
+}
+img{
+    height: 20rem;
+    width: 27rem;
+     border-radius: 1.5rem;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul .item-content{
+    margin: 0 auto;
+}
+.item-content{
+    margin: 0 auto;
+}
+
+p{
+    border: 1px solid pink;
+    font-size: 1rem;
+}
+button{
+    background-color: rgb(88, 197, 88);
+    color: white;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+
+/* styling show in detail page */
+.ul-show{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show-info{
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#content{
+    background-color: rgb(255, 218, 218);
+}
+.back-icon{
+    font-size: 2rem;
+    color: black;
+    padding-top: 1rem;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed View</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <ul class="ul-show">
+        <li class="item">
+            <div class="item-head-show">
+                <h2>
+                    <%= item.name %>
+                </h2>
+            </div>
+            <div class="item-image-show">
+                <img src="<%=item.image%>" alt="">
+            </div>
+            <div class="item-content-show show-info">
+                <p>
+                    <%=item.content %>
+                </p>
+            </div>
+            <div class="additional-info-show show-info">
+                <textarea name="content" id="content" cols="57" readonly rows="5"
+                    placeholder=""><%= item.additionalInformation %></textarea><br>
+            </div>
+            <a href="http://localhost:8080/home/"><i class="fa-solid fa-backward back-icon"></i></a>
+        </li>
+    </ul>
+</body>
+
+</html>

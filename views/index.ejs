@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecom</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <center>
+        <h1>Comp Multiservises</h1>
+    </center>
+
+    <div class="conatiner">
+
+
+        <div class="items">
+            <a href="http://localhost:8080/home/new"> <button type="button">Add Products</button></a>
+            <% for (let item of items) { %>
+                <ul>
+                    <li class="item">
+                        <div class="item-head">
+                            <h2>
+                                <%= item.name %>
+                            </h2>
+                        </div>
+                        <div class="item-image">
+                            <img src="<%=item.image%>" alt="">
+                        </div>
+                        <div class="item-content">
+                            <p>
+                                <%=item.content %>
+                            </p>
+                        </div>
+
+                        <a href="http://localhost:8080/home/<%=item.id%>"><button type="button">See in
+                                detail</button></a>
+                        <a href="http://localhost:8080/home/<%=item.id%>/edit"><button type="button">Edit
+                                details</button></a>
+                        <form action="/home/<%=item.id%>?_method=DELETE" method="post">
+                            <br>
+                            <button>Delete item</button>
+                        </form>
+
+                    </li>
+                </ul>
+
+
+                <% } %>
+
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
